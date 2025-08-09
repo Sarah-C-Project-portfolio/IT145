@@ -1,0 +1,7 @@
+1.37 Basic output with variables (Java)
+A variable like userNum can store a value like an integer. Extend the given program to print userNum values as indicated. (Submit for 2 points).
+(1) Output the user's input.
+
+(2) Extend to output the input squared and cubed. Hint: Compute squared as userNum * userNum. (Submit for 2 points, so 4 points total).
+ 
+(3) Extend to get a second user input into userNum2. Output sum and product. (Submit for 1 point, so 5 points total).
