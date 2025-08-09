@@ -1,0 +1,6 @@
+1.38 Variables, input, and casting (Java)
+(1) Prompt the user to input an integer, a double, a character, and a string, storing each into separate variables. Then, output those four values on a single line separated by a space. (Submit for 2 points).
+
+(2) Extend to also output in reverse. (Submit for 1 point, so 3 points total).
+
+(3) Extend to cast the double to an integer, and output that integer. (Submit for 2 points, so 5 points total).
