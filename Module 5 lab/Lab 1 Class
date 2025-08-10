@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class ShoppingCartPrinter {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+
+      ItemToPurchase item1 = new ItemToPurchase();
+      ItemToPurchase item2 = new ItemToPurchase();
+
+      // Item 1 input
+      System.out.println("Item 1");
+      System.out.println("Enter the item name: ");
+      String name1 = scnr.nextLine();
+      item1.setName(name1);
+
+      System.out.println("Enter the item price: ");
+      int price1 = scnr.nextInt();
+      item1.setPrice(price1);
+
+      System.out.println("Enter the item quantity: ");
+      int quantity1 = scnr.nextInt();
+      item1.setQuantity(quantity1);
+
+      scnr.nextLine(); // Consume newline left after nextInt()
+
+      // Item 2 input
+      System.out.println("\nItem 2");
+      System.out.println("Enter the item name: ");
+      String name2 = scnr.nextLine();
+      item2.setName(name2);
+
+      System.out.println("Enter the item price: ");
+      int price2 = scnr.nextInt();
+      item2.setPrice(price2);
+
+      System.out.println("Enter the item quantity: ");
+      int quantity2 = scnr.nextInt();
+      item2.setQuantity(quantity2);
+
+      // Print total cost
+      System.out.println("\nTOTAL COST");
+      int total1 = item1.getPrice() * item1.getQuantity();
+      int total2 = item2.getPrice() * item2.getQuantity();
+
+      System.out.println(item1.getName() + " " + item1.getQuantity() + " @ $" + item1.getPrice() + " = $" + total1);
+      System.out.println(item2.getName() + " " + item2.getQuantity() + " @ $" + item2.getPrice() + " = $" + total2);
+      System.out.println("\nTotal: $" + (total1 + total2));
+   }
+}
